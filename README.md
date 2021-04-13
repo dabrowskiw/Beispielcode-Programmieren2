@@ -1,0 +1,1 @@
+Beispielcode für Programmieren 2, passend zum [Skript](https://github.com/dabrowskiw/Skript-Programmieren2/).

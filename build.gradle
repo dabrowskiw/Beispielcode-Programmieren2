@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'org.htw.prog2'
+version '1.0-SNAPSHOT'
+
+mainClassName = 'org.htw.prog2.beispiele.cli.PrintNames'
+
+run {
+    args '--firstnames Max Miriam Lisa --lastnames Müller Schmidt -c 5 -l'.split(" ")
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main']
+        }
+    }
+    test {
+        java {
+            srcDirs = ['src/test']
+        }
+    }
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    compile 'commons-cli:commons-cli:1.4'
+}
+
+test {
+    useJUnitPlatform()
+}
