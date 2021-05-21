@@ -6,11 +6,9 @@ plugins {
 group 'org.htw.prog2'
 version '1.0-SNAPSHOT'
 
-//mainClassName = 'org.htw.prog2.beispiele.cli.PrintNames'
 mainClassName = 'org.htw.prog2.beispiele.gui.MainGUI'
 
 run {
-//    args '--firstnames Max Miriam Lisa --lastnames Müller Schmidt -c 5 -l'.split(" ")
 }
 
 repositories {
